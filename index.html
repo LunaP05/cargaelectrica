@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Puesta a Tierra - Seguridad Eléctrica</title>
+<style>
+  body {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .container {
+    display: flex;
+    gap: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+  .box {
+    text-align: center;
+    width: 300px;
+  }
+  .box h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .danger h3 { color: #d9534f; }
+  .safe h3 { color: #5cb85c; }
+  .box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .alert-text {
+    font-size: 12px;
+    margin-top: 8px;
+    font-weight: bold;
+  }
+  .danger .alert-text { color: #d9534f; }
+  .safe .alert-text { color: #5cb85c; }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Situación A -->
+    <div class="box danger">
+      <h3>Sin Puesta a Tierra</h3>
+      <!-- Aquí puedes subir tu imagen procesada o usar un contenedor -->
+      <p class="alert-text">¡PELIGRO! La corriente de fuga atraviesa el cuerpo de la persona hacia la tierra.</p>
+    </div>
+
+    <!-- Situación B -->
+    <div class="box safe">
+      <h3>Con Puesta a Tierra</h3>
+      <p class="alert-text">¡SEGURO! La corriente es desviada inofensivamente a través del cable verde hacia la jabalina.</p>
+    </div>
+</div>
+
+</body>
+</html>
